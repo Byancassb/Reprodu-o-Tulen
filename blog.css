@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Principal {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    height: 100vh;
+}
+
+.Top1 {
+    background-color: #0f0f0f;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inputOpen {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+}
+
+.menu {
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow-x: auto;
+    left: -280px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    z-index: 98;
+}
+
+.menu-cima {
+    height: 10vh;
+    display: flex;
+}
+
+.menu-cima i {
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-size: 35px;
+    background-color: #0f0f0f;
+    color: #ffffff;
+
+}
+
+.menu-cima a {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: #2916e0;
+}
+
+.menu-meio {
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-meio>a:nth-child(4){
+    color: #2916e0;
+}
+
+.menu-meio a {
+    color: #b2b2b2;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu-meio a:hover {
+    color: #2916e0;
+    transition: 0.3s;
+}
+
+.menu-baixo {
+    width: 270px;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-baixo>p:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu-baixo a {
+    color: #b2b2b2;
+    font-size: 20px;
+}
+
+.menu-baixo p:nth-child(2){
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 10px;
+    color: #636363;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.menu-baixo p:nth-child(2) a{
+    color: #b2b2b2;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu-baixo p:nth-child(2) a:hover{
+    color: #2916e0;
+    transition: 0.3s;
+}
+
+.menu-baixo p:nth-child(2) i{
+    color: red;
+
+}
+
+
+
+.inputOpen:checked~.menu {
+    left: 0px;
+    transition: 0.5s;
+}
+
+.Top2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    height: 90vh;
+}
+
+.Top2 a{
+    display: flex;
+    color: #0f0f0f;
+    font-size: 20px;
+}
